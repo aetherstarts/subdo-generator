@@ -36,8 +36,8 @@ def create_subdomain():
         if domain not in zones:
             return jsonify({'success': False, 'message': 'Domain tidak ditemukan'}), 400
             
-        zone_id = zones[domain]['zone_id']
-        api_key = zones[domain]['api_key']
+        zone_id = zones[domain]['2d9fed02d0c0e5433d458d65375045c4']
+        api_key = zones[domain]['xpiA1amlLUdBETGe0S2AOM5mWxipZT4N7KcwHUzg']
         
         url = f"https://api.cloudflare.com/client/v4/zones/{zone_id}/dns_records"
         
